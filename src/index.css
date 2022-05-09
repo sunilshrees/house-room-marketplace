@@ -93,7 +93,7 @@ button {
 .listingDetails,
 .category,
 .explore {
-    margin: 1rem 1rem 12vh;
+    margin: 1rem 1rem 15vh;
 }
 @media (min-width: 1024px) {
     .pageContainer,
