@@ -42,7 +42,14 @@ article img {
 .prev img,
 .next img {
     margin: 0 10px;
-    width: 50px;
+    width: 25px;
+}
+@media screen and (max-width: 768px) {
+    .prev img,
+    .next img {
+        margin: 0 10px;
+        width: 15px;
+    }
 }
 .prev {
     top: 50%;

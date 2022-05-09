@@ -77,13 +77,13 @@ button {
 .removeIcon {
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 45%;
     right: 5%;
 }
 .editIcon {
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 45%;
     right: 10%;
 }
 
@@ -93,7 +93,7 @@ button {
 .listingDetails,
 .category,
 .explore {
-    margin: 1rem;
+    margin: 1rem 1rem 12vh;
 }
 @media (min-width: 1024px) {
     .pageContainer,
@@ -145,7 +145,7 @@ button {
     left: 0;
     bottom: 0;
     right: 0;
-    height: 85px;
+    height: 12vh;
     background-color: #ffffff;
     z-index: 1000;
     display: flex;
