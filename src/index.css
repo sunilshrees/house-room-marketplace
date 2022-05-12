@@ -408,9 +408,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     position: relative;
-    border-bottom: 1.5px solid rgb(100, 100, 100);
+    border-bottom: 1.5px solid rgba(107, 106, 106, 0.212);
 }
 
 .categoryListingLink {
@@ -426,7 +426,7 @@ button {
 @media (min-width: 1024px) {
     .categoryListingImg {
         width: 19%;
-        height: 217px;
+        height: 150px;
     }
 }
 
@@ -543,7 +543,7 @@ button {
     list-style-type: none;
 }
 .listingDetailsList li {
-    margin: 0.3rem 0;
+    margin: 2rem 0;
     font-weight: 500;
     opacity: 0.8;
 }
@@ -563,6 +563,11 @@ button {
 @media (min-width: 1024px) {
     .leafletContainer {
         height: 400px;
+    }
+    .listingDetailsList li {
+        padding: 3rem 0;
+        font-weight: 500;
+        opacity: 0.8;
     }
 }
 

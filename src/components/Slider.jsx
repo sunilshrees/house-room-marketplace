@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Spinner from './Spinner';
+import { useNavigate } from 'react-router-dom';
 import './slider.css';
 import next from '../assets/png/next.png';
 import previous from '../assets/png/previous.png';
 
 function Slider({ loading, listings }) {
     const [index, setIndex] = useState(1);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const lastIndex = listings.length - 1;
@@ -25,6 +28,10 @@ function Slider({ loading, listings }) {
             clearInterval(slider);
         };
     }, [index]);
+
+    const onClick = (id, type) => {
+        navigate(`/category/${type}/${id}`);
+    };
 
     if (loading) {
         return <Spinner />;
@@ -48,8 +55,14 @@ function Slider({ loading, listings }) {
                     position = 'lastSlide';
                 }
                 return (
-                    <article key={obj.id} className={position}>
-                        <img src={obj.data.imgUrls[0]} />
+                    <article
+                        key={obj.id}
+                        className={position}
+                        onClick={() => onClick(obj.id, obj.data.type)}>
+                        <img
+                            src={obj.data.imgUrls[0]}
+                            alt={`${obj.data.name}`}
+                        />
                     </article>
                 );
             })}
