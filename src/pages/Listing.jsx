@@ -112,7 +112,7 @@ function Listing() {
 
                     <h4>
                         Bedrooms :
-                        {listing.bedrooms > 1 ? (
+                        {listing.bedrooms > 0 ? (
                             <span> {listing.bedrooms}</span>
                         ) : null}
                     </h4>
